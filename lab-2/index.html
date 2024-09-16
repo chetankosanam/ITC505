@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>FL-XGBTC: Federated Learning Inspired with XGBoost Tuned Classifier for YouTube Spam Content Detection</title>
+   
+</head>
+<body>
+    <article>
+<h1>FL-XGBTC: Federated Learning Inspired with XGBoost Tuned Classifier for YouTube Spam Content Detection</h1>
+
+<h2>Abstract</h2>
+<p>The problem of spam content in YouTube comments
+    is an ongoing issue, and detecting such content is a
+    critical task to maintain the quality of user experience on
+    the platform. In this study, we propose a Federated Learning
+    Inspired XG-Boost Tuned Classifier, FL-XGBTC, for
+    YouTube spam content detection. The proposed model leverages
+    the advantages of federated learning, which enables the
+    training of a model collaboratively across multiple devices
+    without sharing raw data. The FL-XGBTC model is based
+    on the XGBoost algorithm, which is a powerful and widely
+    used ensemble learning algorithm for classification tasks.</p>
+
+<h2>Keywords</h2>
+<p>Federated learning, NLP, Machine learning, YouTube, Sentiment analysis, Classifiers, Ham, Spam</p>
+
+<h2>Introduction</h2>
+<p>Because it was so popular, spammers utilized YouTube’s
+    comments section as a means of spreading their spam. This
+    has raised concerns since spam can result in phishing attacks
+    that target anybody who clicks on a bad link. The characteristics
+    of spam may be evaluated and identified by using
+    classification. The detection of YouTube spam might use
+    some improvements. A five-stage framework for identifying
+    YouTube spam was built (Abdulhamid et al. 2017) to carry
+    out the tests, including data collection, pre-processing, feature
+    selection, extraction, classification, and detection. Two
+    distinct kinds of data were examined to analyze and validate
+    the YouTube detection methods proposed in this work. You-
+    Tube is a video-sharing website that was founded in 2005.
+    Google purchased YouTube in 2006 and it is now part of
+    Google Subsidiaries (Abu Al-Haija et al. 2022). Sending
+    unwanted messages using a messaging network is known
+    as spamming. Concerning information, YouTube is one of
+    the most popular websites. The ability for viewers to follow
+    channels, comment on particular videos, and subscribe to
+    channels is YouTube’s finest feature.</p>
+
+<h2>Related Work</h2>
+<p>better when evaluated and contrasted with other data mining
+    methods. To be more specific, our classifier highlights
+    the hazards to young viewers by finding inappropriate content
+    targeting toddlers on YouTube with an accuracy rate of
+    84.3%. Next, we carry out a quantitative large-scale characterization
+    to highlight the risks associated with toddlers
+    coming across harmful information while they are innocently
+    navigating the platform. These results highlight the
+    problem of problematic films on YouTube, which persists,
+    and the shortcomings of existing systems to detect them
+    quickly. Using the grid-search cross-validation approach
+    to create ensemble models, he improved them by looking
+    for the optimal hyperparameter values. The two algorithms’
+    baseline (untuned) and tuned performance models are analyzed
+    and compared. Also, the effects of hyperparameter
+    changing on both models were looked at (Gothankar et al.
+    2021; Gourisaria et al. 2022; Khan et al. 2022; Kumar and
+    Sachdeva 2022).</p>
+
+<h2>Mathematical Modeling of Proposed Approach</h2>
+<p>function relations, and they impart a significant role in
+    the mathematical implementation. In federated learning,
+    there are 1000 total iterations. Each client node creates a
+    special local model using a special local dataset and trains
+    it throughout five local rounds. Each local model makes
+    some progress in its unique way. After each loop, a copy
+    of the shared model is delivered to each of the 4 youtube
+    users.
+    Last but not least, calculations are performed to keep
+    track of the local losses and local accuracies and to graph
+    them. This common model—the averaged model is sent to
+    all 4 institutions at the start of each cycle (Concone et al.
+    2022; Ezpeleta et al. 2018).</p>
+
+<h2>Dataset</h2>
+<p>different YouTube videos. The spam classification investigation
+    dataset was made publicly available by Alberto, Lochter,
+    and Almeida (2015) 15. Thank you so much for doing it. The
+    YouTube API was used to gather comments on five of the
+    top ten videos with the most views in the first half of 2015.
+    All five of the tunes are video songs. The Korean musician
+    Psy’s "Gangnam Style" is one of them. The other performances
+    included Katy Perry, LMFAO, Eminem, Shakira,
+    and LMFAO. Try answering a few of the remarks. The comments
+    were manually tagged as either legitimate or spam.
+    One comment was spam, while there were none from real
+    people (https:// www. kaggle. com/ datas ets/ laksh mi25n pathi/
+    images).</p>
+
+<h2>Training and Testing Process</h2>
+<p>We applied TF-IDF for vectorized comments in the numerical
+    vector. After that, we split the data into training and
+    testing datasets. We took testing dataset 20% ratio and the
+    training dataset 80% ratio. After that, we apply differentdifferent
+    machine learning algorithms to find good accuracy
+    and precision score. In Table 3, In the assessment of fourdifferent models, machine learning techniques were evaluated
+    on a binary classification problem. With 94% accuracy
+    and 95% precision, the Random Forest performed admirably.
+    A 91% accuracy and 97% precision were noted for the Decision
+    Tree, indicating that it is quite good at finding positive
+    examples. Its capacity to correctly categorise positive cases
+    is shown by the 91% accuracy and 96% precision shown
+    using logistic regression. With a precision score of 93%.</p>
+
+<h2>Results and Discussion</h2>
+<p>ham merely based on its content while remaining resistant
+    to modifications is still needed Fig. 5 Due to the imprecise
+    nature of English, this proves to be an arduous computer
+    task. The recent rise in processing capacity has made it possible
+    to use Machine learning approaches to handle such
+    challenges. Our contribution in this direction is to find algorithms
+    that can reliably detect spam with a high F1 Score
+    and increase the classifier’s performance.
+    Objectives:
+    Step1:clean the data.
+    Step2:perform exploratory data analysis
+    Step3: performance analysis of the different-different
+    machine learning model.
+    Now it’s time to Implement our theoretical idea in practical
+    things; for that, we followed the steps below.
+    • Data Mining
+    • Exploratory Data Analysis
+    • Text Preprocessing
+    • Model Building
+    • Evaluation
+    • Improvement
+    • Deploy the model</p>
+
+<h2>Conclusion</h2>
+<p>The relevance of the proposed federated learning framework
+    is emphasised in the study’s conclusion, "FL-XGBTC:
+    Federated Learning Inspired with XG-Boost Tuned Classifier
+    for YouTube Spam Content Detection". Significant
+    improvements in YouTube spam content identification are
+    demonstrated by the incorporation of XG-Boost as a classifier,
+    optimised for maximum performance. With the use of
+    a federated learning technique, the study effectively tackles
+    the difficulties associated with spam identification in the
+    dynamic YouTube environment, promoting cooperative
+    learning across decentralised devices and protecting user
+    privacy.In order to provide resilience against spam material,
+    the XG-Boost classifier is fine-tuned even more to improve
+    accuracy and precision. Based on its capacity to respond
+    to the diverse and dynamic nature of YouTube spam, the
+    results demonstrate the superiority of the federated learninginspired
+    model over conventional centralised techniques.</p>
+</article>
+<footer>
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+</footer>
+<script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+</script>
+</body>
+</html>
