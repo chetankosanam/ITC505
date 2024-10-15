@@ -1,0 +1,133 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #a7dae4; /* Light background for readability */
+    color: #000000; /* Dark text color */
+}
+
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif; /* Serif font for headings to make them stand out */
+    color: #2c3e50; /* Darker color for headings */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+h1 {
+    font-size: 32px;
+    text-align: center; /* Center the main title */
+    margin-bottom: 30px; /* Space below the title */
+}
+
+h2,h3 {
+    font-size: 24px;
+    margin-top: 40px; /* Extra space above section titles */
+    border-bottom: 2px solid #2c3e50; /* Underline section titles */
+    padding-bottom: 5px; /* Add padding under the underline */
+}
+
+
+p {
+    font-style: italic; /* Italicize abstract text */
+    color: #7f8c8d;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.8; /* Increased line height for readability */
+}
+
+h2 + p {
+    font-style: italic; /* Italicize abstract text */
+    color: #7f8c8d; /* Lighter gray for abstract */
+}
+
+h2:nth-of-type(2) + p {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold; /* Bold for emphasis */
+}
+
+
+h2 + p > strong {
+    color: #e74c3c; /* Highlight important steps in red */
+}
+
+
+a {
+    color: #2980b9; /* Blue for links */
+    text-decoration: none; /* No underline for links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+    text-align: left;
+}
+
+td {
+    background-color: #ecf0f1;
+}
+
+/* Code Snippets or Functionality */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Blockquote */
+blockquote {
+    background-color: #ecf0f1;
+    border-left: 5px solid #2980b9;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-style: italic;
+}
+li {
+    
+        font-style: italic; /* Italicize abstract text */
+        color: #7f8c8d;
+        font-size: 16px;
+        margin-bottom: 20px;
+        line-height: 1.8; /* Increased line height for readability */
+    
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
