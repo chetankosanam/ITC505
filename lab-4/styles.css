@@ -4,14 +4,14 @@ body {
     line-height: 1.6;
     margin: 20px;
     padding: 20px;
-    background-color: #a7dae4; /* Light background for readability */
-    color: #000000; /* Dark text color */
+    background-color: #a7dae4; 
+    color: #000000; 
 }
 
 
 h1, h2, h3 {
-    font-family: 'Georgia', serif; /* Serif font for headings to make them stand out */
-    color: #2c3e50; /* Darker color for headings */
+    font-family: 'Georgia', serif; 
+    color: #2c3e50; 
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -19,51 +19,50 @@ h1, h2, h3 {
 
 h1 {
     font-size: 32px;
-    text-align: center; /* Center the main title */
-    margin-bottom: 30px; /* Space below the title */
+    text-align: center; 
+    margin-bottom: 30px; 
 }
 
 h2,h3 {
     font-size: 24px;
-    margin-top: 40px; /* Extra space above section titles */
-    border-bottom: 2px solid #2c3e50; /* Underline section titles */
-    padding-bottom: 5px; /* Add padding under the underline */
+    margin-top: 40px; 
+    border-bottom: 2px solid #2c3e50; 
+    padding-bottom: 5px; 
 }
 
 
 p {
-    font-style: italic; /* Italicize abstract text */
+    font-style: italic; 
     color: #7f8c8d;
     font-size: 16px;
     margin-bottom: 20px;
-    line-height: 1.8; /* Increased line height for readability */
+    line-height: 1.8; 
 }
 
 h2 + p {
-    font-style: italic; /* Italicize abstract text */
-    color: #7f8c8d; /* Lighter gray for abstract */
+    font-style: italic; 
+    color: #7f8c8d; 
 }
 
 h2:nth-of-type(2) + p {
     padding: 10px;
     border-radius: 5px;
-    font-weight: bold; /* Bold for emphasis */
+    font-weight: bold; 
 }
 
 
 h2 + p > strong {
-    color: #e74c3c; /* Highlight important steps in red */
+    color: #e74c3c; 
 }
 
 
 a {
-    color: #2980b9; /* Blue for links */
-    text-decoration: none; /* No underline for links */
+    color: #2980b9; 
+    text-decoration: none; 
 }
 
 a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
+    text-decoration: underline; 
 
 
 table {
@@ -87,7 +86,7 @@ td {
     background-color: #ecf0f1;
 }
 
-/* Code Snippets or Functionality */
+
 code {
     font-family: 'Courier New', Courier, monospace;
     
@@ -95,7 +94,7 @@ code {
     border-radius: 3px;
 }
 
-/* Blockquote */
+
 blockquote {
     background-color: #ecf0f1;
     border-left: 5px solid #2980b9;
@@ -105,11 +104,11 @@ blockquote {
 }
 li {
     
-        font-style: italic; /* Italicize abstract text */
+        font-style: italic; 
         color: #7f8c8d;
         font-size: 16px;
         margin-bottom: 20px;
-        line-height: 1.8; /* Increased line height for readability */
+        line-height: 1.8; 
     
 }
 
