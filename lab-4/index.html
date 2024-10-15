@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FL-XGBTC: Federated Learning Inspired with XGBoost Tuned Classifier for YouTube Spam Content Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>FL-XGBTC: Federated Learning Inspired with XGBoost Tuned Classifier for YouTube Spam Content Detection</h1>
+
+    <h2>Abstract</h2>
+    <p>
+        The problem of spam content in YouTube comments is an ongoing issue, and detecting such content is a critical task to maintain the quality of user experience on the platform. In this study, we propose a Federated Learning Inspired XG-Boost Tuned Classifier, FL-XGBTC, for YouTube spam content detection. The proposed model leverages the advantages of federated learning, which enables the training of a model collaboratively across multiple devices without sharing raw data. The FL-XGBTC model is based on the XGBoost algorithm, a powerful and widely used ensemble learning algorithm for classification tasks.
+    </p>
+
+    <h2>Keywords</h2>
+    <p>Federated learning, NLP, Machine learning, YouTube, Sentiment analysis, Classifiers, Ham, Spam</p>
+
+    <h2>Introduction</h2>
+    <p>
+        Because YouTube is extremely popular, spammers have increasingly utilized its comments section to spread spam, raising concerns about phishing attacks that target users. Spam detection on YouTube still requires improvements. A five-stage framework for identifying YouTube spam has been proposed (Abdulhamid et al. 2017), including data collection, pre-processing, feature selection, extraction, classification, and detection. YouTube, a platform founded in 2005 and acquired by Google in 2006, allows users to follow, comment on, and subscribe to channels. The detection of spam on this platform is crucial to maintaining user trust and safety.
+    </p>
+
+    <h2>Related Work</h2>
+    <p>
+        Our classifier has been contrasted with various other data mining methods, showing an accuracy rate of 84.3% when identifying inappropriate content aimed at younger audiences. Using grid-search cross-validation for tuning hyperparameters, we improved classification performance. Our classifier addresses the risks associated with toddlers encountering harmful content on YouTube. Prior work (Gothankar et al. 2021; Gourisaria et al. 2022) highlighted the shortcomings of existing detection systems, which this work aims to improve.
+    </p>
+
+    <h2>Mathematical Modeling of Proposed Approach</h2>
+    <p>
+        In federated learning, 1000 iterations were performed, with each local node training a unique model using its dataset across five rounds. After each iteration, a copy of the global model was shared with all participating nodes. Local losses and accuracies were monitored throughout the training process. The shared model, built on client contributions, helped improve classification accuracy without sharing sensitive data (Concone et al. 2022; Ezpeleta et al. 2018).
+    </p>
+
+    <h2>Dataset</h2>
+    <p>
+        The dataset used for spam classification was provided by Alberto, Lochter, and Almeida (2015), which collected YouTube comments from top-viewed videos in 2015. Comments were manually labeled as spam or legitimate, providing a rich dataset for evaluating classification algorithms. Videos like Psy's "Gangnam Style" were included, and the dataset was accessed via the YouTube API for further analysis.
+    </p>
+
+    <h2>Training and Testing Process</h2>
+    <p>
+        We applied TF-IDF to vectorize the comments and split the dataset into 80% training and 20% testing. Several machine learning algorithms were evaluated for performance, with Random Forest achieving 94% accuracy and 95% precision. Decision Tree performed with 91% accuracy and 97% precision, while logistic regression achieved a 91% accuracy and 96% precision. These results demonstrate the efficiency of these models for binary classification problems.
+    </p>
+
+    <h2>Results and Discussion</h2>
+    <p>
+        Detecting spam based solely on content remains challenging due to the nuances of language. Recent advances in processing power have allowed machine learning techniques to address these challenges. Our contribution focuses on improving classifier performance, particularly in identifying spam content, with a focus on increasing the F1 score. Key steps included cleaning data, conducting exploratory data analysis, building models, and deploying the final solution.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+        The study emphasizes the importance of the federated learning framework proposed in FL-XGBTC for YouTube spam content detection. By incorporating XGBoost as a classifier and leveraging a decentralized learning approach, the study showcases significant improvements in spam detection. The use of federated learning ensures that privacy is maintained while improving classifier accuracy and precision, making the FL-XGBTC model a viable solution for addressing the challenges of detecting spam in a dynamic online environment.
+    </p>
+
+    <h2>References</h2>
+    <p>
+        <li>Abdulhamid SM et al (2017) A review on mobile SMS spam filtering
+            techniques. IEEE Access 5:15650–15666. https:// doi. org/ 10. 1109/
+            ACCESS. 2017. 26667 85
+    </li>
+       <li> Abu Al-Haija Q, Krichen M, Abu Elhaija W (2022) Machine-learningbased
+        darknet traffic detection system for IoT applications. Electronics
+        11(4):556. https:// doi. org/ 10. 3390/ elect ronic s1104 0556
+        Aiyar S, Shetty NP (2018) N-gram assisted Youtube spam comment
+        detection. Procedia Comput Sci 132:174–182. https:// doi. org/ 10.
+        1016/j. procs. 2018. 05. 181</li>
+        
+       <li>Al-Asadi MA, Tasdemir S (2022) Using artificial intelligence against
+        the phenomenon of fake news: a systematic literature review.
+        In: Lahby M, Pathan A-SK, Maleh Y, Yafooz WMS (eds) Combating
+        fake news with computational intelligence techniques,
+        vol 1001. Springer, Cham, pp 39–54. https:// doi. org/ 10. 1007/
+        978-3- 030- 90087-8_2.</li> 
+
+        <li> Ali A, Amin MZ (2016) An Approach for Spam Detection in YouTube
+            Comments Based on Supervised Learning
+            Alnazzawi N, Alsaedi N, Alharbi F, Alaswad N (2022) Using Social
+            media to detect fake news information related to product marketing:
+            the FakeAds corpus. Data 7(4):44. https:// doi. org/ 10. 3390/
+            data7 040044</li>
+
+        <li>Amleshwaram AA, Reddy N, Yadav S, Gu G, Yang C (2013) CATS:
+            characterizing automation of Twitter spammers. In 2013 5th International
+            conference on communication systems and networks
+            (COMSNETS), Bangalore, India, pp 1–10. https:// doi. org/ 10.
+            1109/ COMSN ETS. 2013. 64655 41.
+    </li> 
+
+        <li> Bender KE, Badiger A, Roe BE, Shu Y, Qi D (2022) Consumer behavior
+            during the COVID-19 pandemic: an analysis of food purchasing
+            and management behaviors in U.S. households through the
+            lens of food system resilience. Socioecon Plann Sci 82:101107.
+            https:// doi. org/ 10. 1016/j. seps. 2021. 101107</li></p>
+
+    <h2>Addendum: CSS Styling Choices</h2>
+    <p>In this section, I will explain the rationale behind the stylistic choices applied to the webpage for "FL-XGBTC: Federated Learning Inspired with XGBoost Tuned Classifier for YouTube Spam Content Detection." The objective of these design decisions is to improve readability, emphasize key content, and maintain a clean, modern, and professional layout.</p>
+
+    <h3>1. Font Choices</h3>
+    <p>For this webpage, I opted for a combination of two font families: <strong>Arial</strong> for the body text and <strong>Georgia</strong> for headings. Arial, a sans-serif font, is clean and highly readable on screens, making it ideal for large blocks of text. For headings, I chose Georgia, a serif font, to provide contrast and lend a more formal and academic tone to the section titles. The distinction between serif and sans-serif helps differentiate the structure and content of the document while maintaining a cohesive look.</p>
+
+    <h3>2. Font Sizes and Hierarchy</h3>
+    <p>Font sizes are carefully chosen to ensure a clear hierarchy. The main title (<code>&lt;h1&gt;</code>) is set to <strong>32px</strong> to immediately capture the reader’s attention and provide a strong visual impact. Section headings (<code>&lt;h2&gt;</code>) are slightly smaller, at <strong>24px</strong>, and have a bottom border for distinction. The body text is kept at a standard size of <strong>16px</strong>, which is commonly used for online reading as it offers excellent legibility without straining the eyes. This clear size differentiation ensures easy navigation through different sections of the content.</p>
+
+    <h3>3. Color Choices</h3>
+    <p>The color scheme is kept minimal and professional. The background is set to a light <strong>#f9f9f9</strong>, which offers a soft, neutral tone that reduces visual fatigue during prolonged reading sessions. The text color is a dark gray (<strong>#333</strong>), providing excellent contrast against the light background while being less harsh than pure black. Headings are styled in a darker shade of blue-gray (<strong>#2c3e50</strong>) to emphasize section divisions and create a strong visual structure. Links are colored blue (<strong>#2980b9</strong>) to ensure they stand out and adhere to common web conventions.</p>
+
+    <h3>4. Margins and Padding</h3>
+    <p>Generous margins and padding are applied to enhance the overall readability and create a well-spaced, uncluttered layout. The body has a <strong>20px margin and padding</strong> to ensure that the text does not touch the edges of the screen, creating a balanced and centered layout. Headings have additional <strong>top and bottom margins</strong> to visually separate them from the body text and other elements. For example, section headings have a <strong>40px top margin</strong> to introduce enough white space, improving focus when transitioning between sections.</p>
+
+    <h3>5. Line Height and Spacing</h3>
+    <p>The line height is set to <strong>1.6</strong> for paragraphs, which is slightly more than the default. This ensures enough space between lines for easy reading, especially in text-heavy documents. Paragraphs are spaced with a <strong>20px bottom margin</strong> to keep content well-organized and prevent blocks of text from appearing dense. These spacing choices improve readability and ensure that the content is approachable and inviting.</p>
+
+    <h3>6. Special Section Styling</h3>
+    <ul>
+        <li><strong>Abstract Section:</strong> The abstract section is styled in italics with a lighter gray color (<strong>#7f8c8d</strong>) to distinguish it from the main body. This emphasizes its role as a summary without overwhelming the reader visually.</li>
+        <li><strong>Keyword Section:</strong> The keyword list is enclosed within a light background (<strong>#ecf0f1</strong>) and bolded to emphasize its importance. This styling helps the section stand out as an important reference point for readers interested in key terms.</li>
+        <li><strong>Results and Discussion:</strong> Specific steps and important information within this section are highlighted in red (<strong>#e74c3c</strong>) using bold text. This directs attention to essential actions and outcomes.</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>The design choices were made to balance readability, visual appeal, and professionalism. By using a clean and modern font, a subtle color palette, and thoughtful spacing, the document provides an organized, user-friendly experience for readers engaging with technical content.</p>
+<footer>
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+</footer>
+<script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+</script>
+</body>
+</html>
+
