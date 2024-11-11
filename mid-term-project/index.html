@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinobi Path: Choose Your Destiny</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            margin-bottom: 20px;
+        }
+        #about {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            background-color: #e9e9e9;
+            border-radius: 8px;
+        }
+        #story, #choices, #image-container {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+        }
+        #choices button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #choices button:hover {
+            background-color: #0056b3;
+        }
+        #image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: opacity 0.5s ease;
+        }
+        
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Shinobi Path: Choose Your Destiny</h1></header>
+
+    <section id="about">
+        <h2>About the Game</h2>
+        <p>
+            "Shinobi Path: Choose Your Destiny" is an interactive adventure where you play as a young shinobi 
+            with a choice of paths that define your destiny. With each decision, you move closer to one of eight 
+            possible endings. Will you become a powerful leader, a legendary warrior, or choose a path of peace? 
+            The choice is yours!
+        </p>
+    </section>
+
+    <div id="story" aria-live="polite" class="fade-in"></div>
+    <section id="choices" class="fade-in"></section>
+    <div id="image-container" class="fade-in"></div>
+
+    <!-- Restart Button -->
+    <button id="restart" onclick="startGame()">Restart Game</button>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
