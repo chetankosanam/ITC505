@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Page</h1>
+    </header>
+    
+    <aside class="menu">
+        <nav>
+            <button onclick="navigateHome()">Home</button>
+            <button onclick="navigateAbout()">About</button>
+            <button onclick="navigateServices()">Services</button>
+            <button onclick="navigateContact()">Contact</button>
+        </nav>
+    </aside>
+
+    <main>
+        <!-- JavaScript functionality will go here -->
+        <h2>Interactive Bubble Sort</h2>
+        <p>Enter numbers separated by commas:</p>
+        <input type="text" id="numberInput" placeholder="e.g., 3,5,1,6">
+        <button onclick="sortArray()">Sort Array</button>
+        <p>Sorted Output: <span id="sortedOutput"></span></p>
+    </main>
+
+    <aside class="ad">
+        <a href="https://www.amazon.com" target="_blank">
+            <img src="amazon.jpeg" alt="Ad Image">
+        </a>
+    </aside>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    
+    <script src="script.js"></script>
+    <script type="text/javascript">
+         document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
