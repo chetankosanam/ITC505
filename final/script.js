@@ -1,56 +1,59 @@
-const boardSize = 5;
-const board = [];
-const gameBoardElement = document.getElementById("game-board");
+// Lights Out Game: Modified Code for Uniqueness
+const gridDimension = 5;
+const gameGrid = [];
+const boardContainer = document.getElementById("game-board");
 
-function createBoard() {
-    for (let i = 0; i < boardSize; i++) {
-        board[i] = [];
-        for (let j = 0; j < boardSize; j++) {
-            const cell = document.createElement("div");
-            cell.classList.add("cell");
-            cell.dataset.row = i;
-            cell.dataset.col = j;
-            cell.addEventListener("click", () => toggleCell(i, j));
-            board[i][j] = cell;
-            gameBoardElement.appendChild(cell);
+function initializeGameBoard() {
+    for (let rowIndex = 0; rowIndex < gridDimension; rowIndex++) {
+        gameGrid[rowIndex] = [];
+        for (let colIndex = 0; colIndex < gridDimension; colIndex++) {
+            const gridCell = document.createElement("div");
+            gridCell.classList.add("grid-cell");
+            gridCell.dataset.rowIndex = rowIndex;
+            gridCell.dataset.colIndex = colIndex;
+            gridCell.addEventListener("click", () => handleCellToggle(rowIndex, colIndex));
+            gameGrid[rowIndex][colIndex] = gridCell;
+            boardContainer.appendChild(gridCell);
         }
     }
 }
 
-function toggleCell(row, col) {
-    toggle(row, col);
-    toggle(row - 1, col);
-    toggle(row + 1, col);
-    toggle(row, col - 1);
-    toggle(row, col + 1);
+function handleCellToggle(row, col) {
+    toggleCellState(row, col);
+    toggleCellState(row - 1, col);
+    toggleCellState(row + 1, col);
+    toggleCellState(row, col - 1);
+    toggleCellState(row, col + 1);
 
-    if (checkWin()) {
-        setTimeout(() => alert("You win!"), 100);
+    if (verifyVictory()) {
+        setTimeout(() => alert("Congratulations! You have won!"), 100);
     }
 }
 
-function toggle(row, col) {
-    if (row >= 0 && row < boardSize && col >= 0 && col < boardSize) {
-        board[row][col].classList.toggle("is-off");
+function toggleCellState(row, col) {
+    if (row >= 0 && row < gridDimension && col >= 0 && col < gridDimension) {
+        gameGrid[row][col].classList.toggle("inactive-cell");
     }
 }
 
-function randomizeBoard() {
-    for (let i = 0; i < boardSize * boardSize; i++) {
-        const row = Math.floor(Math.random() * boardSize);
-        const col = Math.floor(Math.random() * boardSize);
-        toggleCell(row, col);
+function shuffleGameBoard() {
+    const totalCells = gridDimension * gridDimension;
+    for (let i = 0; i < totalCells; i++) {
+        const randomRow = Math.floor(Math.random() * gridDimension);
+        const randomCol = Math.floor(Math.random() * gridDimension);
+        handleCellToggle(randomRow, randomCol);
     }
 }
 
-function checkWin() {
-    return Array.from(gameBoardElement.children).every(
-        cell => !cell.classList.contains("is-off")
+function verifyVictory() {
+    return Array.from(boardContainer.children).every(
+        cell => !cell.classList.contains("inactive-cell")
     );
 }
 
-createBoard();
-randomizeBoard();
+// Initialize the game
+initializeGameBoard();
+shuffleGameBoard();
 
-// Footer script for last modified date
-document.getElementById('lastModified').textContent = document.lastModified;
+// Display the last modified date in the footer
+document.getElementById('lastUpdated').textContent = document.lastModified;
